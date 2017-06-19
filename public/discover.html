@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>WeList</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/carousel4.css" rel="stylesheet">
+    <link href="/css/scrollmenu.css" rel="stylesheet">
+        <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="https://v4-alpha.getbootstrap.com/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="/js/jquery.mobile.custom.js"></script>
+    <script src="/js/jquery.mobile.custom.min.js"></script>
+
+    <script src="/js/startup.js"></script>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+      <img id="navlogo" src="img/welist-logo-transp.png" height=10% width=10%>&nbsp;&nbsp;
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="discover.html">Discover </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create.html">Create </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mylists.html">My Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0" id="search" action="/api/search" method="get">
+            <input class="form-control mr-sm-2" id="srch" type="text" name="q" placeholder="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+       </form>
+      </div>
+    </nav>
+
+
+<br><br> <br>
+
+    <div class="container marketing">
+
+    <center>
+    <div class="menu-wrapper">
+        <ul class="menu">
+        <li class="item num1" id="travel">Travel</li><!--
+      --><li class="item num2" id="food">Food</li><!--
+      --><li class="item num3" id="home">Home</li><!--
+      --><li class="item num4" id="kids">Kids</li><!--
+      --><li class="item num5" id="pets">Pets</li><!--
+      --><li class="item num6" id="music">Music</li><!--
+      --><li class="item num7" id="career">Career</li>
+        </ul>
+      <div class="paddles">
+        <button class="left-paddle paddle hidden">
+           <
+        </button>
+        <button class="right-paddle paddle">
+            >
+      </button>
+      </div>
+
+    </div>
+    </center>
+
+    <br>
+
+      <div class="container-fluid">
+    
+        <div class="card-columns" id="lists">
+
+          <!-- list cards go here -->
+
+        </div>
+
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; WeList &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Modal -->
+  <div id="listModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <h2 class="modal-title" id="listName"><strong>List Detail</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 ></h2>
+          <img id="listImg" src="http://www.globeslcc.com/wp-content/uploads/media/anonymous_girl_facebook.jpg" alt="" style="height: auto; max-width: 100%">
+          <p><div id="listItems"></div></p>
+        </div>
+        <div class="modal-footer" id="cardFooter">
+          <!-- dynamically insert footer here -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- discover.js needs to be loaded last for the .item bindings to work -->
+<script src="/js/discover.js"></script>
+
+</body>
+</html>
