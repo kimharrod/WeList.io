@@ -1,2 +1,4 @@
 # WeList.io
-WeList.io - Create, share and discover great lists!
+WeList - Create, share and discover great lists!
+
+[WeList.io](http://welist.io)
